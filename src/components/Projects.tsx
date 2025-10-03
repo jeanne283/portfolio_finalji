@@ -91,7 +91,7 @@ const Projects: React.FC = () => {
                 onClick={() => handleFilterChange(filter.key)}
                 className={`px-6 py-3 rounded-xl font-medium transition-all duration-300 backdrop-blur-sm border ${
                   activeFilter === filter.key
-                    ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white border-primary-400 shadow-lg'
+                    ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white border-primary-400 shadow-sm'
                     : 'bg-white/10 text-gray-300 border-white/20 hover:bg-white/20 hover:text-white'
                 }`}
               >

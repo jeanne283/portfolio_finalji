@@ -25,25 +25,25 @@
     { "id": 11, "name": "MySQL", "level": 80, "category": "database" },
     { "id": 12, "name": "PostgreSQL", "level": 70, "category": "database" },
     { "id": 13, "name": "JSON-Server", "level": 75, "category": "database" },
-    { "id": 13, "name": "Prisma", "level": 75, "category": "database" },
+    { "id": 14, "name": "Prisma", "level": 75, "category": "database" },
     
-    { "id": 14, "name": "Figma", "level": 85, "category": "design" },
-    { "id": 15, "name": "Photoshop", "level": 80, "category": "design" },
-    { "id": 16, "name": "Illustrator", "level": 75, "category": "design" },
-    { "id": 17, "name": "Adobe XD", "level": 80, "category": "design" },
-    { "id": 18, "name": "Canva", "level": 85, "category": "design" },
+    { "id": 15, "name": "Figma", "level": 85, "category": "design" },
+    { "id": 16, "name": "Photoshop", "level": 80, "category": "design" },
+    { "id": 17, "name": "Illustrator", "level": 75, "category": "design" },
+    { "id": 18, "name": "Adobe XD", "level": 80, "category": "design" },
+    { "id": 19, "name": "Canva", "level": 85, "category": "design" },
     
-    { "id": 19, "name": "Recherche utilisateur", "level": 85, "category": "uiux" },
-    { "id": 20, "name": "Wireframing", "level": 90, "category": "uiux" },
-    { "id": 21, "name": "Prototypage", "level": 85, "category": "uiux" },
-    { "id": 22, "name": "Design System", "level": 80, "category": "uiux" },
-    { "id": 23, "name": "Tests utilisateurs", "level": 75, "category": "uiux" },
-    { "id": 24, "name": "Personas", "level": 85, "category": "uiux" },
-    { "id": 25, "name": "Parcours utilisateur", "level": 85, "category": "uiux" },
-    { "id": 26, "name": "Cartographie d'expérience", "level": 80, "category": "uiux" },
+    { "id": 20, "name": "Recherche utilisateur", "level": 85, "category": "uiux" },
+    { "id": 21, "name": "Wireframing", "level": 90, "category": "uiux" },
+    { "id": 22, "name": "Prototypage", "level": 85, "category": "uiux" },
+    { "id": 23, "name": "Design System", "level": 80, "category": "uiux" },
+    { "id": 24, "name": "Tests utilisateurs", "level": 75, "category": "uiux" },
+    { "id": 25, "name": "Personas", "level": 85, "category": "uiux" },
+    { "id": 26, "name": "Parcours utilisateur", "level": 85, "category": "uiux" },
+    { "id": 27, "name": "Cartographie d'expérience", "level": 80, "category": "uiux" },
 
-    { "id": 27, "name": "XML-UML", "level": 70, "category": "other" },
-    { "id": 27, "name": "ZOD", "level": 70, "category": "other" }
+    { "id": 28, "name": "XML-UML", "level": 70, "category": "other" },
+    { "id": 29, "name": "ZOD", "level": 70, "category": "other" }
   ],
   "projects": [
     {

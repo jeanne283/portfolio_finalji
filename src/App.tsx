@@ -5,7 +5,7 @@ import ModernAbout from './components/ModernAbout';
 import Projects from './components/Projects';
 import ModernContact from './components/ModernContact';
 import Footer from './components/Footer';
-import Chatbot from './components/Chatbot';
+import AIChatbot from './components/AIChatbot';
 import { ThemeProvider } from './hooks/useTheme';
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
           </div>
         </main>
         <Footer />
-        <Chatbot />
+        <AIChatbot />
       </div>
     </ThemeProvider>
   );

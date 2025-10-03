@@ -68,7 +68,7 @@ const Hero: React.FC = () => {
             <div className="flex">
               <button
                 onClick={() => setIsQuoteFormOpen(true)}
-                className="group relative px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 transform hover:scale-105 animate-glow"
+                className="group relative px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl overflow-hidden transition-all duration-300 transform hover:scale-105"
               >
                 <span className="relative z-10">Demander un devis</span>
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-600 to-primary-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>

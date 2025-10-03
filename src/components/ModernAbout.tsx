@@ -9,7 +9,7 @@ import {
   Calendar,
   Server, 
   Layout, 
-  Plus 
+  Plus
 } from 'lucide-react';
 import { useApi } from '../hooks/useApi';
 import { portfolioApi } from '../services/api';
@@ -50,6 +50,49 @@ const ModernAbout: React.FC = () => {
       icon: Plus,
       gradient: "from-gray-400 to-gray-500"
     }
+  };
+
+  const skillLogos: Record<string, string> = {
+    // Frontend
+    "JavaScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    "React": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+    "TypeScript": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+    "HTML/CSS": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+    "TailwindCSS": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg",
+    
+    // Backend
+    "Node.js": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+    "Express": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+    "PHP": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
+    "Linux/Shell": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+    "C": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+    
+    // Database
+    "MySQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+    "PostgreSQL": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    "JSON-Server": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/json/json-original.svg",
+    "Prisma": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/prisma.svg",
+    
+    // Design
+    "Figma": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+    "Photoshop": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg",
+    "Illustrator": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/illustrator/illustrator-plain.svg",
+    "Adobe XD": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobexd.svg",
+    "Canva": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/canva.svg",
+    
+    // UI/UX
+    "Recherche utilisateur": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/googleanalytics.svg",
+    "Wireframing": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/sketch.svg",
+    "Prototypage": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+    "Design System": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/storybook.svg",
+    "Tests utilisateurs": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/testcafe.svg",
+    "Personas": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/aboutdotme.svg",
+    "Parcours utilisateur": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/miro.svg",
+    "Cartographie d'expérience": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/miro.svg",
+    
+    // Other
+    "XML-UML": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/uml.svg",
+    "ZOD": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/zod.svg"
   };
 
   if (profileLoading || skillsLoading || experienceLoading) {
@@ -111,42 +154,61 @@ const ModernAbout: React.FC = () => {
           </div>
         </div>
 
-        {/* Section Compétences en mode paysage */}
-        <div className="bg-white/20 dark:bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-gray-300/30">
-          <div className="flex items-center mb-6">
-            <Star className="w-5 h-5 text-primary-500 mr-2" />
-            <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Compétences</h3>
+        {/* Section Compétences par catégories en cards */}
+        <div className="space-y-6">
+          <div className="text-center">
+            <div className="flex items-center justify-center mb-4">
+              <Star className="w-5 h-5 text-primary-500 mr-2" />
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white">Compétences</h3>
+            </div>
           </div>
-          
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-8">
+
+          <div className="grid lg:grid-cols-2 gap-6">
             {Object.entries(skillCategories).map(([category, config]) => {
               const categorySkills = skills?.filter(skill => skill.category === category) || [];
               if (categorySkills.length === 0) return null;
 
-              const Icon = config.icon;
+              const CategoryIcon = config.icon;
               return (
-                <div key={category} className="space-y-4">
-                  <div className="flex items-center">
-                    <div className={`p-1.5 bg-gradient-to-r ${config.gradient} rounded-lg mr-2`}>
-                      <Icon className="w-3 h-3 text-white" />
+                <div key={category} className="bg-white/20 dark:bg-white/10 backdrop-blur-xl rounded-xl p-6 border border-gray-300/30">
+                  <div className="flex items-center mb-4">
+                    <div className={`p-2 bg-gradient-to-r ${config.gradient} rounded-lg mr-3`}>
+                      <CategoryIcon className="w-5 h-5 text-white" />
                     </div>
-                    <h4 className="text-sm font-semibold text-gray-900 dark:text-white">{config.label}</h4>
+                    <h4 className="text-lg font-semibold text-gray-900 dark:text-white">{config.label}</h4>
                   </div>
-                  <div className="grid gap-3">
-                    {categorySkills.map((skill) => (
-                      <div key={skill.id} className="text-xs">
-                        <div className="flex justify-between mb-1">
-                          <span className="text-gray-700 dark:text-gray-300">{skill.name}</span>
-                          <span className="text-primary-500">{skill.level}%</span>
+                  
+                  <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    {categorySkills.map((skill) => {
+                      const logoUrl = skillLogos[skill.name];
+                      
+                      return (
+                        <div key={skill.id} className="flex flex-col items-center text-center group hover:scale-105 transition-transform duration-200">
+                          <div className={`w-12 h-12 bg-white/90 dark:bg-white/10 backdrop-blur-sm rounded-lg flex items-center justify-center mb-2 shadow-sm border border-gray-200/50 dark:border-gray-600/30`}>
+                            {logoUrl ? (
+                              <img
+                                src={logoUrl}
+                                alt={skill.name}
+                                className="w-7 h-7 object-contain"
+                                onError={(e) => {
+                                  const target = e.target as HTMLImageElement;
+                                  target.style.display = 'none';
+                                  const fallbackDiv = target.nextElementSibling as HTMLElement;
+                                  if (fallbackDiv) {
+                                    fallbackDiv.style.display = 'flex';
+                                  }
+                                }}
+                              />
+                            ) : null}
+                            <div className={`w-6 h-6 ${logoUrl ? 'hidden' : 'flex'} items-center justify-center text-gray-400`}>
+                              <Plus className="w-6 h-6" />
+                            </div>
+                          </div>
+                          <h5 className="text-xs font-medium text-gray-900 dark:text-white mb-1 text-center leading-tight">{skill.name}</h5>
+                          <div className="text-sm font-bold text-primary-500">{skill.level}%</div>
                         </div>
-                        <div className="w-full bg-gray-200/50 dark:bg-white/10 rounded-full h-1.5">
-                          <div
-                            className={`bg-gradient-to-r ${config.gradient} h-1.5 rounded-full`}
-                            style={{ width: `${skill.level}%` }}
-                          />
-                        </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </div>
               );

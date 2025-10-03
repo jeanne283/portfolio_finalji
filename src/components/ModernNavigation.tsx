@@ -45,7 +45,7 @@ const ModernNavigation: React.FC<ModernNavigationProps> = ({ activeTab, setActiv
                       onClick={() => setActiveTab(tab.id)}
                       className={`flex items-center space-x-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
                         activeTab === tab.id
-                          ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg transform scale-105'
+                          ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-sm transform scale-105'
                           : 'text-gray-700 dark:text-white/80 hover:text-gray-900 dark:hover:text-white hover:bg-gray-200/50 dark:hover:bg-white/10'
                       }`}
                     >
@@ -93,7 +93,7 @@ const ModernNavigation: React.FC<ModernNavigationProps> = ({ activeTab, setActiv
                       }}
                       className={`w-full flex items-center space-x-4 p-4 rounded-xl font-medium transition-all duration-300 ${
                         activeTab === tab.id
-                          ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-lg'
+                          ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-sm'
                           : 'text-white/80 hover:text-white hover:bg-white/10'
                       }`}
                     >

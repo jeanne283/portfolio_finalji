@@ -228,7 +228,7 @@ const ModernContact: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl hover:shadow-lg disabled:opacity-50 transition-all duration-300 transform hover:scale-105 disabled:scale-100 disabled:hover:scale-100"
+                className="w-full flex items-center justify-center px-8 py-4 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-semibold rounded-xl hover:shadow-sm disabled:opacity-50 transition-all duration-300 transform hover:scale-105 disabled:scale-100 disabled:hover:scale-100"
               >
                 {isSubmitting ? (
                   <>

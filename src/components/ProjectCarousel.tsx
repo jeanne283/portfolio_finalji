@@ -133,7 +133,7 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects: propsProjec
                 </a>
                 <a
                   href={currentProject.demo}
-                  className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-medium rounded-xl hover:shadow-lg transition-all duration-300 transform hover:scale-105"
+                  className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-medium rounded-xl hover:shadow-sm transition-all duration-300 transform hover:scale-105"
                 >
                   <ExternalLink className="w-5 h-5" />
                   <span>Démo</span>

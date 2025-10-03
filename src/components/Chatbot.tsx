@@ -276,7 +276,7 @@ const Chatbot: React.FC = () => {
               setShowQuoteForm(false);
             }
           }}
-          className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white p-4 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 animate-pulse"
+          className="bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white p-4 rounded-full shadow-sm hover:shadow-md transition-all duration-300 transform hover:scale-110 animate-pulse"
         >
           {isOpen ? <X size={24} /> : <MessageCircle size={24} />}
         </button>
@@ -392,7 +392,7 @@ const Chatbot: React.FC = () => {
             <div className="p-4 border-t border-gray-200 dark:border-dark-700">
               <button
                 onClick={() => setShowQuoteModal(true)}
-                className="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3 shadow-lg"
+                className="w-full bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center gap-3 shadow-sm"
               >
                 <span className="text-lg">📋</span>
                 <span className="font-semibold">Voir le devis généré</span>
@@ -698,7 +698,7 @@ const Chatbot: React.FC = () => {
                   generateQuotePDF(generatedQuote);
                   setShowQuoteModal(false);
                 }}
-                className="flex-1 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 font-semibold flex items-center justify-center gap-2 shadow-lg"
+                className="flex-1 bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 font-semibold flex items-center justify-center gap-2 shadow-sm"
               >
                 <span>📄</span>
                 Télécharger le PDF
