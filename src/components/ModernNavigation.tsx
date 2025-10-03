@@ -1,20 +1,19 @@
 import React, { useState } from 'react';
-import { Home, User, FolderOpen, Mail, Menu, X, Code2, Sparkles } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
+import { Home, User, FolderOpen, Mail, Menu, X, Code2, Sparkles, Settings } from 'lucide-react';
 import ThemeToggle from './ThemeToggle';
 
-interface ModernNavigationProps {
-  activeTab: string;
-  setActiveTab: (tab: string) => void;
-}
-
-const ModernNavigation: React.FC<ModernNavigationProps> = ({ activeTab, setActiveTab }) => {
+const ModernNavigation: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const tabs = [
-    { id: 'accueil', label: 'Accueil', icon: Home },
-    { id: 'apropos', label: 'À propos', icon: User },
-    { id: 'projets', label: 'Projets', icon: FolderOpen },
-    { id: 'contact', label: 'Contact', icon: Mail },
+    { id: '/', label: 'Accueil', icon: Home, path: '/' },
+    { id: '/about', label: 'À propos', icon: User, path: '/about' },
+    { id: '/projects', label: 'Projets', icon: FolderOpen, path: '/projects' },
+    { id: '/contact', label: 'Contact', icon: Mail, path: '/contact' },
+    // Admin tab removed from navigation as per user request
+    // { id: '/admin', label: 'Admin', icon: Settings, path: '/admin' },
   ];
 
   return (
@@ -39,19 +38,20 @@ const ModernNavigation: React.FC<ModernNavigationProps> = ({ activeTab, setActiv
               <div className="bg-white/20 dark:bg-white/10 backdrop-blur-lg rounded-full p-2 border border-gray-300/30 dark:border-white/20 flex items-center">
                 {tabs.map((tab) => {
                   const Icon = tab.icon;
+                  const isActive = location.pathname === tab.path;
                   return (
-                    <button
+                    <Link
                       key={tab.id}
-                      onClick={() => setActiveTab(tab.id)}
+                      to={tab.path}
                       className={`flex items-center space-x-2 px-6 py-3 rounded-full font-medium transition-all duration-300 ${
-                        activeTab === tab.id
+                        isActive
                           ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-sm transform scale-105'
                           : 'text-gray-700 dark:text-white/80 hover:text-gray-900 dark:hover:text-white hover:bg-gray-200/50 dark:hover:bg-white/10'
                       }`}
                     >
                       <Icon className="w-4 h-4" />
                       <span>{tab.label}</span>
-                    </button>
+                    </Link>
                   );
                 })}
               </div>
@@ -84,22 +84,21 @@ const ModernNavigation: React.FC<ModernNavigationProps> = ({ activeTab, setActiv
               <div className="space-y-4">
                 {tabs.map((tab) => {
                   const Icon = tab.icon;
+                  const isActive = location.pathname === tab.path;
                   return (
-                    <button
+                    <Link
                       key={tab.id}
-                      onClick={() => {
-                        setActiveTab(tab.id);
-                        setIsMenuOpen(false);
-                      }}
+                      to={tab.path}
+                      onClick={() => setIsMenuOpen(false)}
                       className={`w-full flex items-center space-x-4 p-4 rounded-xl font-medium transition-all duration-300 ${
-                        activeTab === tab.id
+                        isActive
                           ? 'bg-gradient-to-r from-primary-500 to-primary-600 text-white shadow-sm'
                           : 'text-white/80 hover:text-white hover:bg-white/10'
                       }`}
                     >
                       <Icon className="w-5 h-5" />
                       <span>{tab.label}</span>
-                    </button>
+                    </Link>
                   );
                 })}
               </div>
@@ -114,7 +113,7 @@ const ModernNavigation: React.FC<ModernNavigationProps> = ({ activeTab, setActiv
           <div
             key={tab.id}
             className={`w-3 h-3 rounded-full mx-1 transition-all duration-300 ${
-              activeTab === tab.id ? 'bg-gradient-to-r from-primary-400 to-primary-500' : 'bg-white/30'
+              location.pathname === tab.path ? 'bg-gradient-to-r from-primary-400 to-primary-500' : 'bg-white/30'
             }`}
           />
         ))}

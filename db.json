@@ -9,41 +9,180 @@
     "avatar": "/img/moi.jpeg"
   },
   "skills": [
-
-    { "id": 1, "name": "JavaScript", "level": 90, "category": "frontend" },
-    { "id": 2, "name": "React", "level": 85, "category": "frontend" },
-    { "id": 3, "name": "TypeScript", "level": 80, "category": "frontend" },
-    { "id": 4, "name": "HTML/CSS", "level": 90, "category": "frontend" },
-    { "id": 5, "name": "TailwindCSS", "level": 90, "category": "frontend" },
-    
-    { "id": 6, "name": "Node.js", "level": 85, "category": "backend" },
-    { "id": 7, "name": "Express", "level": 75, "category": "backend" },
-    { "id": 8, "name": "PHP", "level": 75, "category": "backend" },
-    { "id": 9, "name": "Linux/Shell", "level": 70, "category": "backend" },
-    { "id": 10, "name": "C", "level": 65, "category": "backend" },
-    
-    { "id": 11, "name": "MySQL", "level": 80, "category": "database" },
-    { "id": 12, "name": "PostgreSQL", "level": 70, "category": "database" },
-    { "id": 13, "name": "JSON-Server", "level": 75, "category": "database" },
-    { "id": 14, "name": "Prisma", "level": 75, "category": "database" },
-    
-    { "id": 15, "name": "Figma", "level": 85, "category": "design" },
-    { "id": 16, "name": "Photoshop", "level": 80, "category": "design" },
-    { "id": 17, "name": "Illustrator", "level": 75, "category": "design" },
-    { "id": 18, "name": "Adobe XD", "level": 80, "category": "design" },
-    { "id": 19, "name": "Canva", "level": 85, "category": "design" },
-    
-    { "id": 20, "name": "Recherche utilisateur", "level": 85, "category": "uiux" },
-    { "id": 21, "name": "Wireframing", "level": 90, "category": "uiux" },
-    { "id": 22, "name": "Prototypage", "level": 85, "category": "uiux" },
-    { "id": 23, "name": "Design System", "level": 80, "category": "uiux" },
-    { "id": 24, "name": "Tests utilisateurs", "level": 75, "category": "uiux" },
-    { "id": 25, "name": "Personas", "level": 85, "category": "uiux" },
-    { "id": 26, "name": "Parcours utilisateur", "level": 85, "category": "uiux" },
-    { "id": 27, "name": "Cartographie d'expérience", "level": 80, "category": "uiux" },
-
-    { "id": 28, "name": "XML-UML", "level": 70, "category": "other" },
-    { "id": 29, "name": "ZOD", "level": 70, "category": "other" }
+    {
+      "id": 1,
+      "name": "JavaScript",
+      "level": 90,
+      "category": "frontend"
+    },
+    {
+      "id": 2,
+      "name": "React",
+      "level": 85,
+      "category": "frontend"
+    },
+    {
+      "id": 3,
+      "name": "TypeScript",
+      "level": 80,
+      "category": "frontend"
+    },
+    {
+      "id": 4,
+      "name": "HTML/CSS",
+      "level": 90,
+      "category": "frontend"
+    },
+    {
+      "id": 5,
+      "name": "TailwindCSS",
+      "level": 90,
+      "category": "frontend"
+    },
+    {
+      "id": 6,
+      "name": "Node.js",
+      "level": 85,
+      "category": "backend"
+    },
+    {
+      "id": 7,
+      "name": "Express",
+      "level": 75,
+      "category": "backend"
+    },
+    {
+      "id": 8,
+      "name": "PHP",
+      "level": 75,
+      "category": "backend"
+    },
+    {
+      "id": 9,
+      "name": "Linux/Shell",
+      "level": 70,
+      "category": "backend"
+    },
+    {
+      "id": 10,
+      "name": "C",
+      "level": 65,
+      "category": "backend"
+    },
+    {
+      "id": 11,
+      "name": "MySQL",
+      "level": 80,
+      "category": "database"
+    },
+    {
+      "id": 12,
+      "name": "PostgreSQL",
+      "level": 70,
+      "category": "database"
+    },
+    {
+      "id": 13,
+      "name": "JSON-Server",
+      "level": 75,
+      "category": "database"
+    },
+    {
+      "id": 14,
+      "name": "Prisma",
+      "level": 75,
+      "category": "database"
+    },
+    {
+      "id": 15,
+      "name": "Figma",
+      "level": 85,
+      "category": "design"
+    },
+    {
+      "id": 16,
+      "name": "Photoshop",
+      "level": 80,
+      "category": "design"
+    },
+    {
+      "id": 17,
+      "name": "Illustrator",
+      "level": 75,
+      "category": "design"
+    },
+    {
+      "id": 18,
+      "name": "Adobe XD",
+      "level": 80,
+      "category": "design"
+    },
+    {
+      "id": 19,
+      "name": "Canva",
+      "level": 85,
+      "category": "design"
+    },
+    {
+      "id": 20,
+      "name": "Recherche utilisateur",
+      "level": 85,
+      "category": "uiux"
+    },
+    {
+      "id": 21,
+      "name": "Wireframing",
+      "level": 90,
+      "category": "uiux"
+    },
+    {
+      "id": 22,
+      "name": "Prototypage",
+      "level": 85,
+      "category": "uiux"
+    },
+    {
+      "id": 23,
+      "name": "Design System",
+      "level": 80,
+      "category": "uiux"
+    },
+    {
+      "id": 24,
+      "name": "Tests utilisateurs",
+      "level": 75,
+      "category": "uiux"
+    },
+    {
+      "id": 25,
+      "name": "Personas",
+      "level": 85,
+      "category": "uiux"
+    },
+    {
+      "id": 26,
+      "name": "Parcours utilisateur",
+      "level": 85,
+      "category": "uiux"
+    },
+    {
+      "id": 27,
+      "name": "Cartographie d'expérience",
+      "level": 80,
+      "category": "uiux"
+    },
+    {
+      "id": 28,
+      "name": "XML-UML",
+      "level": 70,
+      "category": "other"
+    },
+    {
+      "id": 29,
+      "name": "ZOD",
+      "level": 70,
+      "category": "other"
+    }
   ],
   "projects": [
     {
@@ -51,18 +190,28 @@
       "title": "My-Wallet",
       "description": "est une application mobile de services financiers digitaux innovante, conçue pour révolutionner les paiements et transferts d'argent en Afrique. Notre objectif est de proposer une alternative plus accessible",
       "image": "/img/mockup.png",
-      "technologies": ["", "Figma", "Photoshop", "Canva"],
+      "technologies": [
+        "",
+        "Figma",
+        "Photoshop",
+        "Canva"
+      ],
       "category": "UIUX-Design/UX Recherche",
       "github": "https://github.com",
       "demo": "https://www.figma.com/proto/CxVsbS6ddTtIE2mWOEOCS7/My-Wallet?node-id=4-10&p=f&t=9SweNgCHldByMu5F-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
       "featured": true
     },
-     {
+    {
       "id": 2,
       "title": "SEEK-IMMO",
       "description": "Plateforme de commerce électronique complète avec gestion des produits, panier et paiements sécurisés.",
       "image": "/img/SEEKimmo.png",
-      "technologies": ["", "Figma", "Photoshop", "Canva"],
+      "technologies": [
+        "",
+        "Figma",
+        "Photoshop",
+        "Canva"
+      ],
       "category": "UIUX-Design/UX Recherche",
       "github": "https://github.com",
       "demo": "https://www.figma.com/proto/CxVsbS6ddTtIE2mWOEOCS7/My-Wallet?node-id=4-10&p=f&t=9SweNgCHldByMu5F-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
@@ -73,7 +222,12 @@
       "title": "Task Management App",
       "description": "Un tableau de bord financier moderne et intuitif, conçu pour offrir une visualisation claire et interactive des comptes, transactions et statistiques en temps réel.",
       "image": "/img/dashboard.png",
-      "technologies": ["Vue.js", "PHP", "MySQL", "Socket.io"],
+      "technologies": [
+        "Vue.js",
+        "PHP",
+        "MySQL",
+        "Socket.io"
+      ],
       "category": "frontend",
       "github": "https://github.com",
       "demo": "https://demo.com",
@@ -84,51 +238,76 @@
       "title": "YONI-MA LOGISTIQUE",
       "description": "Une solution digitale innovante conçue pour optimiser le transport et la gestion des marchandises à l’échelle internationale. L’application permet de suivre, organiser et calculer automatiquement les frais des cargaisons (maritimes, aériennes et routières) tout en intégrant des règles intelligentes de gestion des produits (alimentaires, chimiques, matériels fragiles ou incassables).",
       "image": "/img/image.png",
-      "technologies": ["JavaScript", "API Weather", "NodeJS"],
+      "technologies": [
+        "JavaScript",
+        "API Weather",
+        "NodeJS"
+      ],
       "category": "fullstack",
       "github": "https://github.com/abdoulaye150199/Yonima",
       "demo": "https://demo.com",
       "featured": false
     },
-      {
+    {
       "id": 5,
       "title": "E-commerce Platform",
       "description": "Plateforme de commerce électronique complète avec gestion des produits, panier et paiements sécurisés.",
       "image": "/img/E-com.png",
-      "technologies": ["", "Figma", "Photoshop", "Canva"],
+      "technologies": [
+        "",
+        "Figma",
+        "Photoshop",
+        "Canva"
+      ],
       "category": "UIUX-Design/UX Recherche",
       "github": "https://github.com",
       "demo": "https://www.figma.com/proto/CxVsbS6ddTtIE2mWOEOCS7/My-Wallet?node-id=4-10&p=f&t=9SweNgCHldByMu5F-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
       "featured": true
     },
-      {
+    {
       "id": 6,
       "title": "CareLine",
       "description": "Une application simple et sécurisée pour acheter vos produits cosmétiques et pharmaceutiques de qualité, au meilleur prix et avec un suivi rapide.",
       "image": "/img/Pharmcos.png",
-      "technologies": ["", "Figma", "Photoshop", "Canva"],
+      "technologies": [
+        "",
+        "Figma",
+        "Photoshop",
+        "Canva"
+      ],
       "category": "UIUX-Design/UX Recherche",
       "github": "https://github.com",
       "demo": "",
       "featured": true
     },
-      {
+    {
       "id": 7,
       "title": "MediConnect+",
       "description": "MediConnect+ est une plateforme de télémédecine nouvelle génération intégrant l'intelligence artificielle pour révolutionner l'accès aux soins. Le projet vise à connecter patients et professionnels de santé via une solution digitale complète, sécurisée et intuitive.",
       "image": "/img/medic.png",
-      "technologies": ["", "Figma", "Photoshop", "Canva"],
+      "technologies": [
+        "",
+        "Figma",
+        "Photoshop",
+        "Canva"
+      ],
       "category": "UIUX-Design/UX Recherche",
       "github": "https://github.com",
       "demo": "https://www.figma.com/proto/CxVsbS6ddTtIE2mWOEOCS7/My-Wallet?node-id=4-10&p=f&t=9SweNgCHldByMu5F-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2",
       "featured": true
-    },   
-     {
+    },
+    {
       "id": 8,
       "title": "Gestion D'apprenant",
       "description": "Une Application de gestion des apprenants de Orange Digital Center qui gere les promotions, les référentiels et les apprenants de l'école du code SA",
       "image": "/img/apprenant.png",
-      "technologies": ["PHP", "HTML","Tailwind", "JavaScript", "MySQL"],
+      "technologies": [
+        "PHP",
+        "HTML",
+        "Tailwind",
+        "JavaScript",
+        "MySQL"
+      ],
       "category": "frontend",
       "github": "https://github.com/abdoulaye150199/projet-ges-apprenant",
       "demo": "",
@@ -136,16 +315,14 @@
     }
   ],
   "experience": [
-    
-
-      {
+    {
       "id": 1,
       "company": "Freelance",
       "position": "Développeur Fullstack",
       "period": "2022 - Aujourd'hui",
       "description": "Collaboration avec plusieur entreprise tech, proposition de plusieurs solutions numeriques uiux design, Developpement application web/mobile"
     },
-      {
+    {
       "id": 2,
       "company": "Digital Agency",
       "position": "Développeur Frontend",
@@ -158,6 +335,13 @@
       "position": "UI/UX Designer",
       "period": "Août 2023 - Février 2024",
       "description": "Conception UX/UI et recherche utilisateur en télétravail : réalisation d'ateliers de conception, création de prototypes web/mobile, analyse UX, méthodologies (personas, parcours utilisateur, cartographie d'expérience) et conception de services centrée utilisateur."
+    },
+    {
+      "company": "BKS",
+      "position": "Developpeur Fullstack",
+      "period": "2025",
+      "description": "",
+      "id": 4
     }
   ]
 }

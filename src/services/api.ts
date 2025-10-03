@@ -94,4 +94,76 @@ export const portfolioApi = {
       return portfolioData.experience as Experience[];
     }
   },
+
+  // CRUD for Skills
+  createSkill: async (skill: Omit<Skill, 'id'>): Promise<Skill> => {
+    try {
+      if (isProduction) {
+        throw new Error('CRUD operations not supported in production');
+      }
+      const response = await api.post('/skills', skill);
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  },
+
+  updateSkill: async (id: number, skill: Partial<Skill>): Promise<Skill> => {
+    try {
+      if (isProduction) {
+        throw new Error('CRUD operations not supported in production');
+      }
+      const response = await api.put(`/skills/${id}`, skill);
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  },
+
+  deleteSkill: async (id: number): Promise<void> => {
+    try {
+      if (isProduction) {
+        throw new Error('CRUD operations not supported in production');
+      }
+      await api.delete(`/skills/${id}`);
+    } catch (error) {
+      throw error;
+    }
+  },
+
+  // CRUD for Experience
+  createExperience: async (experience: Omit<Experience, 'id'>): Promise<Experience> => {
+    try {
+      if (isProduction) {
+        throw new Error('CRUD operations not supported in production');
+      }
+      const response = await api.post('/experience', experience);
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  },
+
+  updateExperience: async (id: number, experience: Partial<Experience>): Promise<Experience> => {
+    try {
+      if (isProduction) {
+        throw new Error('CRUD operations not supported in production');
+      }
+      const response = await api.put(`/experience/${id}`, experience);
+      return response.data;
+    } catch (error) {
+      throw error;
+    }
+  },
+
+  deleteExperience: async (id: number): Promise<void> => {
+    try {
+      if (isProduction) {
+        throw new Error('CRUD operations not supported in production');
+      }
+      await api.delete(`/experience/${id}`);
+    } catch (error) {
+      throw error;
+    }
+  },
 };
