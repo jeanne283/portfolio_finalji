@@ -131,7 +131,10 @@ const AIChatbot: React.FC = () => {
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
                   target.style.display = 'none';
-                  target.nextElementSibling!.style.display = 'flex';
+                  const nextElement = target.nextElementSibling as HTMLElement;
+                  if (nextElement) {
+                    nextElement.style.display = 'flex';
+                  }
                 }}
               />
               <User className="w-6 h-6 text-primary-600 hidden" />
