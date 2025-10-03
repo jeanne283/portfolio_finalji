@@ -29,7 +29,7 @@ const ModernNavigation: React.FC = () => {
                 <Sparkles className="w-4 h-4 text-yellow-500 dark:text-yellow-400 absolute -top-1 -right-1 animate-pulse" />
               </div>
               <span className="text-xl font-bold bg-gradient-to-r from-primary-400 to-primary-300 bg-clip-text text-transparent">
-                Portfolio
+                Abdoulaye Diallo
               </span>
             </div>
 
