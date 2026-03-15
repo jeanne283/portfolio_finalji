@@ -4,7 +4,7 @@ Un portfolio moderne et interactif développé avec React, TypeScript et Tailwin
 
 ## ✨ Fonctionnalités
 
-- **Portfolio moderne** avec thème vert élégant
+- **Portfolio moderne** avec thème rose élégant
 - **Système de devis automatique** avec génération PDF
 - **Formulaire de contact intégré** avec chatbot IA
 - **Design responsive** et mode sombre
@@ -160,8 +160,6 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 **Jeanne Young**
 - Email : youngjeanne283@outlook.fr
-- Téléphone : +221 78 291 7770
-- LinkedIn : [Votre profil LinkedIn]
 
 ---
 
