@@ -1,4 +1,4 @@
-# Portfolio Abdoulaye Diallo
+# Portfolio Jeanne Young
 
 Un portfolio moderne et interactif développé avec React, TypeScript et Tailwind CSS, featuring un système de devis automatique avec génération de PDF.
 
@@ -158,8 +158,8 @@ Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
 ## 📞 Contact
 
-**Abdoulaye Diallo**
-- Email : abdallahuix.dev@gmail.com
+**Jeanne Young**
+- Email : youngjeanne283@outlook.fr
 - Téléphone : +221 78 291 7770
 - LinkedIn : [Votre profil LinkedIn]
 

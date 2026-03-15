@@ -670,7 +670,7 @@ const Chatbot: React.FC = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-green-800 dark:text-green-200">
-                      Notification envoyée à Abdoulaye
+                      Notification envoyée à Jeanne
                     </p>
                     <p className="text-sm text-green-600 dark:text-green-400">
                       Il vous contactera bientôt pour discuter du projet

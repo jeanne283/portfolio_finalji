@@ -26,7 +26,7 @@ const AIChatbot: React.FC = () => {
     },
     {
       question: "Comment puis-je vous contacter ?",
-      answer: "Vous pouvez m'envoyer un email à abdallahuix.dev@gmail.com ou m'appeler au +221 78 291 7770."
+      answer: "Vous pouvez m'envoyer un email à youngjeanne283@outlook.fr ou m'appeler au +1 514 298 7202."
     },
     {
       question: "Combien de temps pour un projet ?",
@@ -49,7 +49,7 @@ const AIChatbot: React.FC = () => {
     if (isOpen && messages.length === 0) {
       const welcomeMessage: Message = {
         id: '1',
-        text: "Salut ! Je suis Abdoulaye, votre assistant virtuel. Comment puis-je vous aider aujourd'hui ?",
+        text: "Salut ! Je suis Jeanne YOUNG, votre assistant virtuel. Comment puis-je vous aider aujourd'hui ?",
         isBot: true,
         timestamp: new Date()
       };
@@ -126,7 +126,7 @@ const AIChatbot: React.FC = () => {
             <div className="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-3">
               <img 
                 src="/img/moi.jpeg" 
-                alt="Abdoulaye" 
+                alt="Jeanne" 
                 className="w-8 h-8 rounded-full object-cover"
                 onError={(e) => {
                   const target = e.target as HTMLImageElement;
@@ -140,7 +140,7 @@ const AIChatbot: React.FC = () => {
               <User className="w-6 h-6 text-primary-600 hidden" />
             </div>
             <div className="flex-1">
-              <h4 className="font-semibold">Salut ! Je suis Abdoulaye</h4>
+              <h4 className="font-semibold">Salut ! Je suis Jeanne</h4>
               <p className="text-sm opacity-90">Assistant Support. Comment puis-je vous aider ?</p>
             </div>
             <button

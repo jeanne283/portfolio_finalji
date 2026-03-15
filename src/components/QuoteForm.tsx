@@ -432,7 +432,7 @@ const QuoteForm: React.FC<QuoteFormProps> = ({ isOpen, onClose }) => {
                   </div>
                   <div>
                     <p className="font-bold text-green-800 dark:text-green-200 text-xl">
-                      ✅ Notification envoyée à Abdoulaye
+                      ✅ Notification envoyée à Jeanne
                     </p>
                     <p className="text-green-700 dark:text-green-400 text-lg">
                       Il vous contactera bientôt pour discuter du projet

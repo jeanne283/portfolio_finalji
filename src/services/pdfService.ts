@@ -4,11 +4,11 @@ import type { GeneratedQuote } from '../types/portfolio';
 export const generateQuotePDF = (quote: GeneratedQuote): void => {
   const doc = new jsPDF();
 
-  // Couleurs de la palette verte
-  const primaryColor: [number, number, number] = [22, 163, 74]; // Vert primaire (primary-600)
-  const secondaryColor: [number, number, number] = [34, 197, 94]; // Vert accent (primary-500)
-  const darkGreen: [number, number, number] = [22, 101, 52]; // Vert foncé (primary-700)
-  const lightGreen: [number, number, number] = [187, 247, 208]; // Vert clair (primary-200)
+  // Couleurs de la palette rose
+  const primaryColor: [number, number, number] = [219, 39, 119]; // Rose primaire (primary-600)
+  const secondaryColor: [number, number, number] = [244, 114, 182]; // Rose accent (primary-400)
+  const darkGreen: [number, number, number] = [190, 24, 93]; // Rose foncé (primary-700)
+  const lightGreen: [number, number, number] = [251, 207, 232]; // Rose clair (primary-200)
 
   // Configuration de la page
   const pageWidth = doc.internal.pageSize.width;
@@ -47,7 +47,7 @@ export const generateQuotePDF = (quote: GeneratedQuote): void => {
 
   doc.setTextColor(255, 255, 255);
   centerText('DEVIS AUTOMATIQUE', 20, 18);
-  centerText('Portfolio Abdoulaye Diallo', 35, 12);
+  centerText('Portfolio Jeanne Young', 35, 12);
   centerText('Développement Web & Mobile', 45, 10);
 
   currentY = 60;
@@ -149,10 +149,10 @@ export const generateQuotePDF = (quote: GeneratedQuote): void => {
 
   currentY += 15;
 
-  // Pied de page avec branding vert
+  // Pied de page avec branding rose
   const footerY = pageHeight - 35;
   doc.setFillColor(lightGreen[0], lightGreen[1], lightGreen[2]);
-  doc.rect(margin, footerY - 5, pageWidth - 2 * margin, 30, 'F');
+  doc.rect(margin, footerY - 5, pageWidth - margin, 30, 'F');
 
   doc.setDrawColor(primaryColor[0], primaryColor[1], primaryColor[2]);
   doc.setLineWidth(0.5);
@@ -160,11 +160,11 @@ export const generateQuotePDF = (quote: GeneratedQuote): void => {
 
   doc.setFontSize(9);
   doc.setTextColor(darkGreen[0], darkGreen[1], darkGreen[2]);
-  centerText('Abdoulaye Diallo - Développeur Full Stack', footerY + 5);
-  centerText('Email: abdallahuix.dev@gmail.com | Tél: +221 78 291 7770', footerY + 12);
+  centerText('Jeanne Young - Développeur Full Stack', footerY + 5);
+  centerText('Email: youngjeanne283@outlook.fr | Tél: +1 514 298 7202', footerY + 12);
   centerText(`Devis généré automatiquement le ${quote.createdAt.toLocaleDateString('fr-FR')}`, footerY + 19);
 
-  // Ajouter un petit élément décoratif vert
+  // Ajouter un petit élément décoratif rose
   doc.setFillColor(primaryColor[0], primaryColor[1], primaryColor[2]);
   doc.circle(margin + 10, footerY + 25, 2, 'F');
   doc.circle(pageWidth - margin - 10, footerY + 25, 2, 'F');
@@ -179,11 +179,11 @@ export const generateQuotePDF = (quote: GeneratedQuote): void => {
 export const generateQuotePDFBlob = (quote: GeneratedQuote): Blob => {
   const doc = new jsPDF();
 
-  // Couleurs de la palette verte
-  const primaryColor: [number, number, number] = [22, 163, 74]; // Vert primaire (primary-600)
-  const secondaryColor: [number, number, number] = [34, 197, 94]; // Vert accent (primary-500)
-  const darkGreen: [number, number, number] = [22, 101, 52]; // Vert foncé (primary-700)
-  const lightGreen: [number, number, number] = [187, 247, 208]; // Vert clair (primary-200)
+  // Couleurs de la palette rose
+  const primaryColor: [number, number, number] = [219, 39, 119]; // Rose primaire (primary-600)
+  const secondaryColor: [number, number, number] = [244, 114, 182]; // Rose accent (primary-400)
+  const darkGreen: [number, number, number] = [190, 24, 93]; // Rose foncé (primary-700)
+  const lightGreen: [number, number, number] = [251, 207, 232]; // Rose clair (primary-200)
 
   // Configuration de la page
   const pageWidth = doc.internal.pageSize.width;
@@ -217,7 +217,7 @@ export const generateQuotePDFBlob = (quote: GeneratedQuote): Blob => {
 
   doc.setTextColor(255, 255, 255);
   centerText('DEVIS AUTOMATIQUE', 20, 18);
-  centerText('Portfolio Abdoulaye Diallo', 35, 12);
+  centerText('Portfolio Jeanne Young', 35, 12);
   centerText('Développement Web & Mobile', 45, 10);
 
   currentY = 60;
@@ -327,8 +327,8 @@ export const generateQuotePDFBlob = (quote: GeneratedQuote): Blob => {
 
   doc.setFontSize(9);
   doc.setTextColor(darkGreen[0], darkGreen[1], darkGreen[2]);
-  centerText('Abdoulaye Diallo - Développeur Full Stack', footerY + 5);
-  centerText('Email: abdallahuix.dev@gmail.com | Tél: +221 78 291 7770', footerY + 12);
+  centerText('Jeanne Young - Développeur Full Stack', footerY + 5);
+  centerText('Email: youngjeanne283@outlook.fr | Tél: +1 514 298 7202', footerY + 12);
 
   // Retourner le blob du PDF
   return doc.output('blob');

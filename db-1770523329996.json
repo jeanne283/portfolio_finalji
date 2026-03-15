@@ -41,152 +41,145 @@
     },
     {
       "id": 6,
-      "name": "Next.js",
-      "level": 75,
-      "category": "frontend",
-      "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nextdotjs.svg"
-    },
-    {
-      "id": 7,
       "name": "Node.js",
       "level": 75,
       "category": "backend"
     },
     {
-      "id": 8,
+      "id": 7,
       "name": "Express",
       "level": 75,
       "category": "backend"
     },
     {
-      "id": 9,
+      "id": 8,
       "name": "PHP",
       "level": 75,
       "category": "backend"
     },
     {
-      "id": 10,
+      "id": 9,
       "name": "Linux/Shell",
       "level": 70,
       "category": "backend"
     },
     {
-      "id": 11,
+      "id": 10,
       "name": "Python",
       "level": 85,
       "category": "backend",
       "icon": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg"
     },
     {
-      "id": 12,
+      "id": 11,
       "name": "MySQL",
       "level": 70,
       "category": "database"
     },
     {
-      "id": 13,
+      "id": 12,
       "name": "PostgreSQL",
       "level": 70,
       "category": "database"
     },
     {
-      "id": 14,
+      "id": 13,
       "name": "JSON-Server",
       "level": 70,
       "category": "database"
     },
     {
-      "id": 15,
+      "id": 14,
       "name": "Prisma",
       "level": 75,
       "category": "database"
     },
     {
-      "id": 16,
+      "id": 15,
       "name": "Figma",
       "level": 90,
       "category": "design"
     },
     {
-      "id": 17,
+      "id": 16,
       "name": "Photoshop",
       "level": 80,
       "category": "design"
     },
     {
-      "id": 18,
+      "id": 17,
       "name": "Illustrator",
       "level": 75,
       "category": "design"
     },
     {
-      "id": 19,
+      "id": 18,
       "name": "Adobe XD",
       "level": 80,
       "category": "design"
     },
     {
-      "id": 20,
+      "id": 19,
       "name": "Canva",
       "level": 85,
       "category": "design"
     },
     {
-      "id": 21,
+      "id": 20,
       "name": "Recherche utilisateur",
       "level": 90,
       "category": "uiux"
     },
     {
-      "id": 22,
+      "id": 21,
       "name": "Wireframing",
       "level": 90,
       "category": "uiux"
     },
     {
-      "id": 23,
+      "id": 22,
       "name": "Prototypage",
       "level": 90,
       "category": "uiux"
     },
     {
-      "id": 24,
+      "id": 23,
       "name": "Design System",
       "level": 90,
       "category": "uiux"
     },
     {
-      "id": 25,
+      "id": 24,
       "name": "Tests utilisateurs",
       "level": 90,
       "category": "uiux"
     },
     {
-      "id": 26,
+      "id": 25,
       "name": "Personas",
       "level": 90,
       "category": "uiux"
     },
     {
-      "id": 27,
+      "id": 26,
       "name": "Parcours utilisateur",
       "level": 90,
       "category": "uiux"
     },
     {
-      "id": 28,
+      "id": 27,
       "name": "Cartographie d'expérience",
       "level": 90,
       "category": "uiux"
     },
     {
-      "id": 29,
+      "id": 28,
       "name": "XML-UML",
       "level": 70,
       "category": "other"
     },
     {
-      "id": 30,
+      "id": 29,
       "name": "ZOD",
       "level": 70,
       "category": "other"
@@ -195,8 +188,8 @@
   "projects": [
     {
       "id": 1,
-      "title": "Space viewer",
-      "description": "SPACE Viewer est une application de visualisation spatiale permettant de suivre les satellites en temps réel et d’explorer l’environnement spatial via une interface 3D immersive.",
+      "title": "VIEW SPACE",
+      "description": "View Space est une application qui traque des satelites en ligne et permet d'avoir une vue immersive en 3D de l'espace",
       "image": "/img/space-viewer.png",
       "technologies": [
         "",
@@ -205,14 +198,14 @@
         "Canva"
       ],
       "category": "UIUX-Design/UX Recherche",
-      "github": "https://github.com/jeanne283/3D-LANDING-PAGE-",
-      "demo": "https://www.figma.com/proto/L9F8f3TbETCiikyEFFJ2Ev/Space-viewer?node-id=2-3&t=IxetF0wCgFK2BBpq-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=631%3A2336&show-proto-sidebar=1",
+      "github": "https://github.com",
+      "demo": "https://www.figma.com/proto/L9F8f3TbETCiikyEFFJ2Ev/Space-viewer?node-id=2-3&t=3DNVs7Hbp884Lu1r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=631%3A2336&show-proto-sidebar=1",
       "featured": true
     },
     {
       "id": 2,
-      "title": "Seytu Tension",
-      "description": "Application mobile de suivi de la tension artérielle en collaboration avec le ministère de la santé du Sénégal qui permet de parler à des médecins en temps réel pour des consultations en ligne",
+      "title": "SEYTU-TENSION",
+      "description": "Seytu tension est une application de suivie de tension arterielle où l'on peut parler avec des médecins en ligne en collaboration avec le ministère de la santé du sénégal",
       "image": "/img/seytu-tension.jpeg",
       "technologies": [
         "",
@@ -222,13 +215,13 @@
       ],
       "category": "UIUX-Design/UX Recherche",
       "github": "https://github.com",
-      "demo": "https://www.figma.com/proto/1e83xj4MgFozlNRn39L2x0/tax-management?node-id=1-4069&t=JqMyImIGnIrFRP49-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+      "demo": "https://www.figma.com/proto/L9F8f3TbETCiikyEFFJ2Ev/Space-viewer?node-id=2-3&t=3DNVs7Hbp884Lu1r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=631%3A2336&show-proto-sidebar=1",
       "featured": true
     },
     {
       "id": 3,
-      "title": "3D Landing page",
-      "description": "Landing page avec personnage 3D interactif, avec un mode sombre et clair.",
+      "title": "3D landing page",
+      "description": "une landing page moderne avec un effet 3D intéractif et un mode sombre et claire comme fonctionnalité",
       "image": "/img/3d-avatar.png",
       "technologies": [
         "HTML",
@@ -237,7 +230,7 @@
         "JsDelivr"
       ],
       "category": "frontend",
-      "github": "https://github.com",
+      "github": "https://github.com/jeanne283/3D-LANDING-PAGE-",
       "demo": "https://demo.com",
       "featured": true
     },
@@ -245,22 +238,22 @@
       "id": 4,
       "title": "YONI-MA LOGISTIQUE",
       "description": "Une solution digitale innovante conçue pour optimiser le transport et la gestion des marchandises à l’échelle internationale. L’application permet de suivre, organiser et calculer automatiquement les frais des cargaisons (maritimes, aériennes et routières) tout en intégrant des règles intelligentes de gestion des produits (alimentaires, chimiques, matériels fragiles ou incassables).",
-      "image": "/img/yonima-logistique.png",
+      "image": "/img/image.png",
       "technologies": [
         "JavaScript",
         "API Weather",
         "NodeJS"
       ],
       "category": "fullstack",
-      "github": "",
+      "github": "https://github.com/abdoulaye150199/Yonima",
       "demo": "https://demo.com",
       "featured": false
     },
     {
       "id": 5,
-      "title": "Gestion de cargaison",
-      "description": "Gestion de cargaison est une plateforme complète pour orchestrer les expéditions maritimes, aériennes et terrestres, avec suivi en temps réel des cargaisons, calcul automatique des frais et alertes proactives sur les délais de livraison.",
-      "image": "/img/gestion de cargaison.png",
+      "title": "E-commerce Platform",
+      "description": "Seytu tension est une application de suivie de tension arterielle où l'on peut parler avec des médecins en ligne en collaboration avec le ministère de la santé du sénégal",
+      "image": "/img/E-com.png",
       "technologies": [
         "",
         "Figma",
@@ -269,14 +262,30 @@
       ],
       "category": "UIUX-Design/UX Recherche",
       "github": "https://github.com",
-      "demo": "https://demo.com",
+      "demo": "https://www.figma.com/proto/L9F8f3TbETCiikyEFFJ2Ev/Space-viewer?node-id=2-3&t=3DNVs7Hbp884Lu1r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=631%3A2336&show-proto-sidebar=1",
+      "featured": true
+    },
+    {
+      "id": 6,
+      "title": "CareLine",
+      "description": "Une application simple et sécurisée pour acheter vos produits cosmétiques et pharmaceutiques de qualité, au meilleur prix et avec un suivi rapide.",
+      "image": "/img/Pharmcos.png",
+      "technologies": [
+        "",
+        "Figma",
+        "Photoshop",
+        "Canva"
+      ],
+      "category": "UIUX-Design/UX Recherche",
+      "github": "https://github.com",
+      "demo": "",
       "featured": true
     },
     {
       "id": 7,
-      "title": "Application web interne de gestion fiscale (Tax Management)",
-      "description": "Application web interne B2B de gestion fiscale pour une banque, conçue pour centraliser les dossiers, automatiser les calculs et assurer la conformité réglementaire. Elle permet aussi aux employés de la banque de communiquer et de collaborer autour des dossiers.",
-      "image": "/img/Tax management.png",
+      "title": "MediConnect+",
+      "description": "MediConnect+ est une plateforme de télémédecine nouvelle génération intégrant l'intelligence artificielle pour révolutionner l'accès aux soins. Le projet vise à connecter patients et professionnels de santé via une solution digitale complète, sécurisée et intuitive.",
+      "image": "/img/medic.png",
       "technologies": [
         "",
         "Figma",
@@ -285,22 +294,24 @@
       ],
       "category": "UIUX-Design/UX Recherche",
       "github": "https://github.com",
-      "demo": "https://www.figma.com/proto/1e83xj4MgFozlNRn39L2x0/tax-management?node-id=1-4069&t=JqMyImIGnIrFRP49-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1",
+      "demo": "https://www.figma.com/proto/L9F8f3TbETCiikyEFFJ2Ev/Space-viewer?node-id=2-3&t=3DNVs7Hbp884Lu1r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=631%3A2336&show-proto-sidebar=1",
       "featured": true
     },
     {
       "id": 8,
-      "title": "Synergy Pay",
-      "description": "Synergy Pay est une web app de gestion des salaires simplifiée.",
-      "image": "/img/Synergy Pay.png",
+      "title": "Gestion D'apprenant",
+      "description": "Une Application de gestion des apprenants de Orange Digital Center qui gere les promotions, les référentiels et les apprenants de l'école du code SA",
+      "image": "/img/apprenant.png",
       "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind"
+        "PHP",
+        "HTML",
+        "Tailwind",
+        "JavaScript",
+        "MySQL"
       ],
       "category": "frontend",
-      "github": "",
-      "demo": "https://entreprise-peach.vercel.app/",
+      "github": "https://github.com/abdoulaye150199/projet-ges-apprenant",
+      "demo": "",
       "featured": true
     }
   ],

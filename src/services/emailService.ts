@@ -31,7 +31,7 @@ export const sendEmail = async (formData: EmailData): Promise<boolean> => {
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key: '371341fd-258b-40b4-b53e-571ff8391d2f', // Remplacez par votre clé Web3Forms
+          access_key: '30ebe735-d1c9-418a-84eb-83a84a56f7e9', // Remplacez par votre clé Web3Forms
           from_name: formData.name,
           email: formData.email,
           subject: `[Portfolio Contact] ${formData.subject}`,
@@ -55,7 +55,7 @@ export const sendEmail = async (formData: EmailData): Promise<boolean> => {
       console.error('Erreur Web3Forms:', web3Error);
     }
 
-    // Option 2: Fallback vers mailto (ouvre le client email)
+    // Fallback vers mailto (ouvre le client email)
     console.log('Utilisation de mailto pour:', formData);
     
     const subject = encodeURIComponent(`[Portfolio Contact] ${formData.subject}`);
@@ -71,7 +71,7 @@ export const sendEmail = async (formData: EmailData): Promise<boolean> => {
     );
     
     // Ouvrir le client email par défaut
-    const mailtoLink = `mailto:abdallahuix.dev@gmail.com?subject=${subject}&body=${body}`;
+    const mailtoLink = `mailto:youngjeanne283@outlook.fr?subject=${subject}&body=${body}`;
     window.open(mailtoLink, '_self');
     
     // Petite pause pour permettre à l'email client de s'ouvrir et afficher le statut
@@ -132,7 +132,7 @@ ${quoteData.generatedAt.toLocaleDateString('fr-FR')} à ${quoteData.generatedAt.
           'Accept': 'application/json'
         },
         body: JSON.stringify({
-          access_key: '371341fd-258b-40b4-b53e-571ff8391d2f',
+          access_key: '30ebe735-d1c9-418a-84eb-83a84a56f7e9',
           from_name: 'Portfolio Chatbot',
           email: 'noreply@portfolio.dev',
           subject: subject,
@@ -154,7 +154,7 @@ ${quoteData.generatedAt.toLocaleDateString('fr-FR')} à ${quoteData.generatedAt.
     // Fallback vers mailto
     const encodedSubject = encodeURIComponent(subject);
     const encodedMessage = encodeURIComponent(message);
-    const mailtoLink = `mailto:abdallahuix.dev@gmail.com?subject=${encodedSubject}&body=${encodedMessage}`;
+    const mailtoLink = `mailto:youngjeanne283@outlook.fr?subject=${encodedSubject}&body=${encodedMessage}`;
 
     window.open(mailtoLink, '_self');
     await new Promise(resolve => setTimeout(resolve, 1500));
@@ -168,6 +168,6 @@ ${quoteData.generatedAt.toLocaleDateString('fr-FR')} à ${quoteData.generatedAt.
 
 // Configuration simple pour Web3Forms
 // 1. Allez sur https://web3forms.com
-// 2. Entrez votre email abdallahuix.dev@gmail.com
+// 2. Entrez votre email youngjeanne283@outlook.fr
 // 3. Récupérez votre Access Key
 // 4. Remplacez 'YOUR_ACCESS_KEY_HERE' dans le code ci-dessus

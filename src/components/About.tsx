@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { User, MapPin, Mail, Phone } from 'lucide-react';
 import { useApi } from '../hooks/useApi';
 import { portfolioApi } from '../services/api';
@@ -6,6 +6,12 @@ import { portfolioApi } from '../services/api';
 const About: React.FC = () => {
   const { data: profile, loading: profileLoading } = useApi(() => portfolioApi.getProfile());
   const { data: skills, loading: skillsLoading } = useApi(() => portfolioApi.getSkills());
+
+  useEffect(() => {
+    if (skills) {
+      console.log('Skills loaded:', skills);
+    }
+  }, [skills]);
   const { data: experience, loading: experienceLoading } = useApi(() => portfolioApi.getExperience());
 
   const skillCategories = {
@@ -41,6 +47,20 @@ const About: React.FC = () => {
                 <User className="w-6 h-6 text-algae-600 mr-3" />
                 <h3 className="text-2xl font-semibold text-dark-800">Profil</h3>
               </div>
+
+              {/* Avatar, Name & Title */}
+              <div className="flex items-center mb-6">
+                {profile?.avatar ? (
+                  <img src={profile.avatar} alt={`${profile.name} avatar`} className="w-20 h-20 rounded-full object-cover mr-4" />
+                ) : (
+                  <User className="w-12 h-12 text-algae-600 mr-4" />
+                )}
+                <div>
+                  <h4 className="text-xl font-semibold text-dark-800">{profile?.name}</h4>
+                  <p className="text-algae-600">{profile?.title}</p>
+                </div>
+              </div>
+
               <p className="text-dark-600 leading-relaxed text-lg">
                 {profile?.bio}
               </p>
@@ -97,7 +117,18 @@ const About: React.FC = () => {
                     {categorySkills.map((skill) => (
                       <div key={skill.id}>
                         <div className="flex justify-between mb-2">
-                          <span className="text-dark-700 font-medium">{skill.name}</span>
+                          <div className="flex items-center">
+                            {skill.icon && (
+                              <img
+                                src={skill.icon}
+                                alt={`${skill.name} logo`}
+                                title={skill.name}
+                                className="w-6 h-6 mr-2 object-contain"
+                                onError={(e) => { (e.currentTarget as HTMLImageElement).style.display = 'none'; }}
+                              />
+                            )}
+                            <span className="text-dark-700 font-medium">{skill.name}</span>
+                          </div>
                           <span className="text-algae-600 font-semibold">{skill.level}%</span>
                         </div>
                         <div className="w-full bg-dark-200 rounded-full h-3">

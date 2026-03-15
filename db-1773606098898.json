@@ -245,14 +245,14 @@
       "id": 4,
       "title": "YONI-MA LOGISTIQUE",
       "description": "Une solution digitale innovante conçue pour optimiser le transport et la gestion des marchandises à l’échelle internationale. L’application permet de suivre, organiser et calculer automatiquement les frais des cargaisons (maritimes, aériennes et routières) tout en intégrant des règles intelligentes de gestion des produits (alimentaires, chimiques, matériels fragiles ou incassables).",
-      "image": "/img/yonima-logistique.png",
+      "image": "/img/image.png",
       "technologies": [
         "JavaScript",
         "API Weather",
         "NodeJS"
       ],
       "category": "fullstack",
-      "github": "",
+      "github": "https://github.com/abdoulaye150199/Yonima",
       "demo": "https://demo.com",
       "featured": false
     },
@@ -290,17 +290,19 @@
     },
     {
       "id": 8,
-      "title": "Synergy Pay",
-      "description": "Synergy Pay est une web app de gestion des salaires simplifiée.",
-      "image": "/img/Synergy Pay.png",
+      "title": "Gestion D'apprenant",
+      "description": "Une Application de gestion des apprenants de Orange Digital Center qui gere les promotions, les référentiels et les apprenants de l'école du code SA",
+      "image": "/img/apprenant.png",
       "technologies": [
-        "React",
-        "TypeScript",
-        "Tailwind"
+        "PHP",
+        "HTML",
+        "Tailwind",
+        "JavaScript",
+        "MySQL"
       ],
       "category": "frontend",
-      "github": "",
-      "demo": "https://entreprise-peach.vercel.app/",
+      "github": "https://github.com/abdoulaye150199/projet-ges-apprenant",
+      "demo": "",
       "featured": true
     }
   ],

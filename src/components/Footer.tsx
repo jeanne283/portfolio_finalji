@@ -12,12 +12,12 @@ const Footer: React.FC = () => {
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-gradient-to-r from-yellow-400 to-orange-400 rounded-full animate-pulse"></div>
             </div>
             <span className="text-lg font-semibold bg-gradient-to-r from-primary-600 to-primary-500 dark:from-primary-400 dark:to-primary-300 bg-clip-text text-transparent">
-              Abdoulaye Diallo
+              Jeanne Young
             </span>
           </div>
 
           <div className="text-gray-600 dark:text-gray-400 text-sm mt-4 md:mt-0">
-            © 2025 Abdoulaye Diallo. Tous droits réservés.
+            © 2025 Jeanne Young. Tous droits réservés.
           </div>
         </div>
       </div>

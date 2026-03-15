@@ -124,13 +124,15 @@ const ProjectCarousel: React.FC<ProjectCarouselProps> = ({ projects: propsProjec
 
               {/* Action Buttons */}
               <div className="flex space-x-4">
-                <a
-                  href={currentProject.github}
-                  className="flex items-center space-x-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white font-medium rounded-xl hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
-                >
-                  <Github className="w-5 h-5" />
-                  <span>Code</span>
-                </a>
+                {currentProject.github && (
+                  <a
+                    href={currentProject.github}
+                    className="flex items-center space-x-2 px-6 py-3 bg-white/10 backdrop-blur-sm text-white font-medium rounded-xl hover:bg-white/20 transition-all duration-300 transform hover:scale-105"
+                  >
+                    <Github className="w-5 h-5" />
+                    <span>Code</span>
+                  </a>
+                )}
                 <a
                   href={currentProject.demo}
                   className="flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary-500 to-primary-600 text-white font-medium rounded-xl hover:shadow-sm transition-all duration-300 transform hover:scale-105"

@@ -23,10 +23,10 @@ const Projects: React.FC = () => {
 
   const filters = [
     { key: 'all', label: 'Tous' },
+    { key: 'UIUX-Design/UX Recherche', label: 'UI/UX Design' },
     { key: 'frontend', label: 'Frontend' },
     { key: 'backend', label: 'Backend' },
     { key: 'fullstack', label: 'Full Stack' },
-    { key: 'UIUX-Design/UX Recherche', label: 'UI/UX Design' },
   ];
 
   const filteredProjects = projects?.filter(project => 
@@ -149,12 +149,14 @@ const Projects: React.FC = () => {
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-center justify-center">
                         <div className="flex space-x-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300 transform translate-y-4 group-hover:translate-y-0">
-                          <a
-                            href={project.github}
-                            className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-primary-500/50 transition-all duration-200 transform hover:scale-110"
-                          >
-                            <Github className="w-5 h-5" />
-                          </a>
+                          {project.github && (
+                            <a
+                              href={project.github}
+                              className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-primary-500/50 transition-all duration-200 transform hover:scale-110"
+                            >
+                              <Github className="w-5 h-5" />
+                            </a>
+                          )}
                           <a
                             href={project.demo}
                             className="p-3 bg-white/20 backdrop-blur-sm rounded-full text-white hover:bg-primary-600/50 transition-all duration-200 transform hover:scale-110"

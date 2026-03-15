@@ -65,6 +65,7 @@ const ModernAbout: React.FC = () => {
     "Express": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
     "PHP": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
     "Linux/Shell": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+    "Python": "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/python.svg",
     "C": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
     
     // Database
