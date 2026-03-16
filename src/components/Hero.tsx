@@ -50,11 +50,11 @@ const Hero: React.FC = () => {
 
             {/* Social Links */}
             <div className="flex space-x-6 mb-12">
-              <a href="https://github.com/abdoulaye150199" target="_blank" rel="noopener noreferrer" className="group relative p-4 bg-white/10 backdrop-blur-sm hover:bg-primary-600/30 rounded-xl transition-all duration-300 transform hover:scale-110 hover:rotate-3">
+              <a href="https://github.com/jeanne283" target="_blank" rel="noopener noreferrer" className="group relative p-4 bg-white/10 backdrop-blur-sm hover:bg-primary-600/30 rounded-xl transition-all duration-300 transform hover:scale-110 hover:rotate-3">
                 <Github className="w-6 h-6 text-white group-hover:text-primary-200" />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-500/50 to-primary-600/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
               </a>
-              <a href="https://www.linkedin.com/in/abdoulaye-diallo-gl-uiuxdesigner" target="_blank" rel="noopener noreferrer" className="group relative p-4 bg-white/10 backdrop-blur-sm hover:bg-primary-500/30 rounded-xl transition-all duration-300 transform hover:scale-110 hover:rotate-3">
+              <a href="https://www.linkedin.com/in/jeanne-y-ba5159272/" target="_blank" rel="noopener noreferrer" className="group relative p-4 bg-white/10 backdrop-blur-sm hover:bg-primary-500/30 rounded-xl transition-all duration-300 transform hover:scale-110 hover:rotate-3">
                 <Linkedin className="w-6 h-6 text-white group-hover:text-primary-200" />
                 <div className="absolute inset-0 bg-gradient-to-r from-primary-600/50 to-primary-500/50 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
               </a>

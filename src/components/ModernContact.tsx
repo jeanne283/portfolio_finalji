@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Send, MapPin, Mail, Phone, CheckCircle, AlertCircle, MessageSquare, Sparkles } from 'lucide-react';
+import { Send, MapPin, Mail, CheckCircle, AlertCircle, MessageSquare, Sparkles } from 'lucide-react';
 import { useApi } from '../hooks/useApi';
 import { portfolioApi } from '../services/api';
 import { sendEmail } from '../services/emailService';
@@ -93,18 +93,6 @@ const ModernContact: React.FC = () => {
                   <div>
                     <p className="text-gray-600 dark:text-gray-400 text-sm">Email</p>
                     <p className="text-black dark:text-white font-medium text-lg">{profile.email}</p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="group bg-white/80 dark:bg-white/10 backdrop-blur-xl rounded-2xl p-6 border border-gray-300 dark:border-white/20 hover:border-primary-600/50 transition-all duration-300 transform hover:scale-105">
-                <div className="flex items-center">
-                  <div className="p-4 bg-gradient-to-r from-primary-600 to-primary-700 rounded-xl mr-4">
-                    <Phone className="w-6 h-6 text-white" />
-                  </div>
-                  <div>
-                    <p className="text-gray-600 dark:text-gray-400 text-sm">Téléphone</p>
-                    <p className="text-black dark:text-white font-medium text-lg">{profile.phone}</p>
                   </div>
                 </div>
               </div>
